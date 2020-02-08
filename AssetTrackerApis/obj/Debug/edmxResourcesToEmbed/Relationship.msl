@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="AssetTrackerModelStoreContainer" CdmEntityContainer="AssetTrackerEntities">
-    <EntitySetMapping Name="Tables">
-      <EntityTypeMapping TypeName="AssetTrackerModel.Table">
-        <MappingFragment StoreEntitySet="Table">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="AssetTrackerModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="firstname" ColumnName="firstname" />
@@ -11,13 +15,11 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="AssetTrackerModel.User">
-        <MappingFragment StoreEntitySet="Users">
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="AssetTrackerModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="role1" ColumnName="role" />
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="username" ColumnName="username" />
-          <ScalarProperty Name="firstname" ColumnName="firstname" />
-          <ScalarProperty Name="lastname" ColumnName="lastname" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

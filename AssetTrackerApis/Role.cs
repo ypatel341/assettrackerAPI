@@ -12,11 +12,11 @@ namespace AssetTrackerApis
     using System;
     using System.Collections.Generic;
     
-    public partial class Table
+    public partial class Role
     {
         public int Id { get; set; }
-        public string username { get; set; }
-        public string firstname { get; set; }
-        public string lastname { get; set; }
+        public string role1 { get; set; }
+    
+        public virtual User User { get; set; }
     }
 }

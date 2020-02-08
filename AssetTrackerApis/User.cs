@@ -18,5 +18,11 @@ namespace AssetTrackerApis
         public string username { get; set; }
         public string firstname { get; set; }
         public string lastname { get; set; }
+        public byte[] email { get; set; }
+        public string role { get; set; }
+        public string password { get; set; }
+        public string phonenumber { get; set; }
+    
+        public virtual Role Role1 { get; set; }
     }
 }

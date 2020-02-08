@@ -25,7 +25,7 @@ namespace AssetTrackerApis
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Table> Tables { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
     }
 }
