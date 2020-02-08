@@ -1,2 +1,5 @@
 .vs/
 assettrackerAPI/AssetTrackerApis/App_Start/WebApiConfig.cs
+assettrackerAPI/AssetTrackerApis/obj/
+assettrackerAPI/AssetTrackerApis/bin/
+
